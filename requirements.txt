@@ -1,0 +1,7 @@
+numpy
+pandas
+wandb
+pytorch
+pytorch-lightning
+
+git+git://github.com/KIT-IAI/pyWATTS@master#egg=pywatts

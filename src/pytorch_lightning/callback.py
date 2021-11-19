@@ -1,4 +1,3 @@
-import os
 import time
 import pprint
 
@@ -72,9 +71,5 @@ class TerminalCallback(Callback):
             metric[f'opt/{key}'] = values[min_idx]
         self.opt_metric = metric.copy()
         metric['avg_duration'] = np.mean(self.durations)
-
-        #print(f'\nRun {pl_module.hparams["run"]:05} '
-        #      f'Index {pl_module.hparams["idx"]:05} '
-        #      f'- {pl_module.hparams["name"]}:')
         pprint.pprint(metric)
         print('\n')

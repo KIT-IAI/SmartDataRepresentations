@@ -1,9 +1,8 @@
 import os
+import requests
 
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from pandas.core.dtypes.missing import isna
 
 
 OPSD_URL = 'https://data.open-power-system-data.org/time_series/2020-10-06/time_series_60min_singleindex.csv'
@@ -23,7 +22,9 @@ WEATHER_KEEP = [
 
 
 def download(url, output):
-    os.system(f'wget {url} -O {output}')
+    r = requests.get(url)
+    with open(output, "wb") as file:
+        file.write(r.content)
 
 
 def load_csv(path):
@@ -34,12 +35,13 @@ def load_csv(path):
 
 
 def main():
-    # download(OPSD_URL, 'opsd.csv')
+    download(OPSD_URL, 'opsd.csv')
     opsd = load_csv('opsd.csv')
     opsd = opsd[OPSD_KEEP]
     opsd['utc_timestamp'] = pd.to_datetime(opsd['utc_timestamp'])
     opsd.set_index('utc_timestamp', inplace=True)
-    # download(WEATHER_URL, 'weather.csv')
+
+    download(WEATHER_URL, 'weather.csv')
     weather = load_csv('weather.csv')
     weather = weather[WEATHER_KEEP]
     weather['utc_timestamp'] = pd.to_datetime(weather['utc_timestamp'])
