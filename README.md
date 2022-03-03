@@ -1,7 +1,7 @@
 # Smart Data Representations: Impact on the Accuracy of Deep Neural Networks
 
 This repository contains the Python implementation of the results presented in the following paper:
->[O. Neumann](mailto:oliver.neumann@kit.edu), N. Ludwig, M. Turowski, B. Heidrich, V. Hagenmeyer and R. Mikut, 2021, "Smart Data Representations: Impact on the Accuracy of Deep Neural Networks," in Proceedings. 31. Workshop Computational Intelligence Berlin, 25. – 26. November 2021, H. Schulte, F. Hoffmann, R. Mikut (Eds.), KIT Scientific Publishing Karlsruhe.
+>[O. Neumann](mailto:oliver.neumann@kit.edu), N. Ludwig, M. Turowski, B. Heidrich, V. Hagenmeyer and R. Mikut, 2021, "Smart Data Representations: Impact on the Accuracy of Deep Neural Networks," in Proceedings. 31. Workshop Computational Intelligence Berlin, 25. – 26. November 2021, H. Schulte, F. Hoffmann, R. Mikut (Eds.), KIT Scientific Publishing Karlsruhe, pp. 113-130.
 
 Available at [arXiv](https://arxiv.org/abs/2111.09128) or [KIT Scientific Publishing](https://www.ksp.kit.edu/site/books/e/10.5445/KSP/1000138532/).
 
