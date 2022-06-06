@@ -50,3 +50,13 @@ Finally, you can run the pipeline via `python run.py` with the default parameter
 ```
 
 The results of a pipeline run are printed in the command line and logged to [W&B](http://wandb.com/). In our pipeline we use mainly [scikit-learn](https://scikit-learn.org/stable/) to train linear models, [PyTorch](https://pytorch.org/) with [Lightning](https://www.pytorchlightning.ai/) to train neural networks, and [pyWATTS](https://github.com/KIT-IAI/pyWATTS) as a workflow engine.
+
+
+## Funding
+
+This project is funded by the Helmholtz Association’s Initiative and Networking Fund through Helmholtz AI, the Helmholtz Association under the Program "Energy System Design", and the German Research Foundation (DFG) under Germany’s Excellence Strategy – EXC number 2064/1 – Project number 390727645.
+
+
+## License
+
+This code is licensed under the [MIT License](LICENSE).
